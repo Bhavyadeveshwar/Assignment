@@ -1,0 +1,270 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url("../assets/images/hero-bg.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+/* Navigation Bar */
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 64px;
+  color: white;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-left a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-left a:hover,
+.nav-right a:hover {
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.logo img {
+  height: 50px;
+}
+
+/* Social Media Icons */
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icons a img {
+  height: 20px;
+  width: 20px;
+  object-fit: contain;
+  margin-left: 16px;
+  display: block;
+}
+
+/* Hero Content */
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+.hero-content .cta {
+  padding: 12px 24px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+/* Features Section */
+.features {
+  padding: 80px 15vw; /* Previously 64px → now using vw for better responsiveness */
+  background-color: #fff;
+  text-align: center;
+  color: #000;
+}
+
+
+.features-header h2 {
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+.features-header p {
+  font-size: 18px;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto 48px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+}
+
+.feature-item img {
+  height: 48px;
+  margin-bottom: 24px;
+}
+
+.feature-item h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.feature-item p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+#video {
+  padding: 80px 10vw;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.video-container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+  display: block;
+  cursor: pointer;
+}
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.play-icon img {
+  height: 40px;
+  width: 40px;
+}
+
+.playing .play-icon {
+  display: none;
+}
+
+.macbook-section {
+  width: 1000px;
+  height: 924px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.macbook-container {
+  width: 661px;
+  height: 386px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.macbook-content {
+  width: 530px;
+  height: 357px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.macbook-content h2 {
+  font-size: 36px;
+  margin-bottom: 16px;
+  color: #000;
+}
+
+.macbook-content p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 24px;
+}
+
+.macbook-content .cta {
+  padding: 12px 24px;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.macbook-image {
+  width: 661.3px;
+  height: 386px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.macbook-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
